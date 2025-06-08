@@ -13,6 +13,8 @@ select_menu =int(select_menu)
 print("You selected option: ",select_menu)
 print(type(select_menu))
 
+tasks = []
+
 if select_menu == 1:
     task = input("Enter the task to add: ")
     print(f"Task '{task}' added successfully!")
