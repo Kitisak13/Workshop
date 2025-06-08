@@ -1,5 +1,4 @@
 
-from view import view_task
 
 def getselected_menu():
     print("------------To Do List App-------------")
@@ -12,11 +11,6 @@ def getselected_menu():
     print("6. Save tasks to file")
     print("7. Exit")
 
-    select_menu = input("Select an option number: ")
-    select_menu =int(select_menu)
-    print("You selected option: ",select_menu)
-    print(type(select_menu))
-    return select_menu
 
 while True:
     select_menu = getselected_menu()
