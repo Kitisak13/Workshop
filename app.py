@@ -1,4 +1,6 @@
 
+from view import view_task
+
 def getselected_menu():
     print("------------To Do List App-------------")
     print("Menu:")
@@ -19,13 +21,16 @@ def getselected_menu():
 while True:
     select_menu = getselected_menu()
 
-    tasks = []
+    tasks = [(
+        {"title": "Sample Task 1", "completed": False},
+        {"title": "Sample Task 2", "completed": True}
+    )]
 
     if select_menu == 1:
         task = input("Enter the task to add: ")
         print(f"Task '{task}' added successfully!")
     elif select_menu == 2:
-        print("Here are all your tasks:")
+        view_task(tasks)
         # This would normally list tasks, but we don't have any tasks yet.
     elif select_menu == 3:
         task_id = input("Enter the task ID to delete: ")
