@@ -1,3 +1,5 @@
+from .add import python_fuction
+
 print("------------To Do List App-------------")
 print("Menu:")
 print("1. Add a new task")
@@ -12,6 +14,10 @@ select_menu = input("Select an option number: ")
 select_menu =int(select_menu)
 print("You selected option: ",select_menu)
 print(type(select_menu))
+
+print("------------------------------")
+python_fuction(select_menu)
+# This is a simple To Do List application that allows users to manage tasks.
 
 tasks = []
 
